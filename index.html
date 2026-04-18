@@ -1,0 +1,881 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Horeb Digital Network Inc. | Film & Production House</title>
+  <meta name="description" content="Horeb Digital Network Inc. — Award-winning film, video production, post-production, and digital media company. We craft stories that move the world." />
+  <meta property="og:title" content="Horeb Digital Network Inc. | Film & Production House" />
+  <meta property="og:description" content="Award-winning film, video production, post-production, and digital media company." />
+  <meta property="og:url" content="https://www.horebdigitalnetwork.com" />
+  <meta property="og:type" content="website" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&family=Inter:wght@300;400;500;600&family=Bebas+Neue&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ═══════════════════════════════════════════ CURSOR -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-follower" id="cursorFollower"></div>
+
+  <!-- ═══════════════════════════════════════════ LOADER -->
+  <div class="loader" id="loader">
+    <div class="loader-inner">
+      <div class="loader-logo">
+        <span class="loader-h">H</span>
+        <span class="loader-dn">DN</span>
+      </div>
+      <div class="loader-bar"><div class="loader-progress" id="loaderProgress"></div></div>
+      <p class="loader-text">Crafting Your Vision</p>
+    </div>
+  </div>
+
+  <!-- ═══════════════════════════════════════════ NAV -->
+  <nav class="nav" id="nav">
+    <div class="nav-inner">
+      <a href="#home" class="nav-logo">
+        <div class="logo-mark">
+          <svg viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <polygon points="30,4 56,18 56,42 30,56 4,42 4,18" stroke="#C9A84C" stroke-width="2" fill="none"/>
+            <text x="50%" y="54%" dominant-baseline="middle" text-anchor="middle" fill="#C9A84C" font-size="18" font-family="Bebas Neue" letter-spacing="1">H</text>
+          </svg>
+        </div>
+        <div class="logo-text">
+          <span class="logo-name">Horeb Digital</span>
+          <span class="logo-sub">Network Inc.</span>
+        </div>
+      </a>
+
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#work">Work</a></li>
+        <li><a href="#process">Process</a></li>
+        <li><a href="#contact" class="nav-cta">Start a Project</a></li>
+      </ul>
+
+      <button class="nav-burger" id="burger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+      <ul>
+        <li><a href="#about" class="mobile-link">About</a></li>
+        <li><a href="#services" class="mobile-link">Services</a></li>
+        <li><a href="#work" class="mobile-link">Work</a></li>
+        <li><a href="#process" class="mobile-link">Process</a></li>
+        <li><a href="#contact" class="mobile-link">Start a Project</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ═══════════════════════════════════════════ HERO -->
+  <section class="hero" id="home">
+    <div class="hero-bg">
+      <div class="hero-video-overlay"></div>
+      <!-- Cinematic film-strip animated background -->
+      <div class="hero-grid"></div>
+      <div class="film-strip film-strip--left">
+        <div class="film-hole"></div><div class="film-hole"></div><div class="film-hole"></div>
+        <div class="film-hole"></div><div class="film-hole"></div><div class="film-hole"></div>
+        <div class="film-hole"></div><div class="film-hole"></div>
+      </div>
+      <div class="film-strip film-strip--right">
+        <div class="film-hole"></div><div class="film-hole"></div><div class="film-hole"></div>
+        <div class="film-hole"></div><div class="film-hole"></div><div class="film-hole"></div>
+        <div class="film-hole"></div><div class="film-hole"></div>
+      </div>
+    </div>
+
+    <div class="hero-content">
+      <div class="hero-eyebrow reveal-up">
+        <span class="eyebrow-line"></span>
+        <span>Award-Winning Film &amp; Production House</span>
+        <span class="eyebrow-line"></span>
+      </div>
+      <h1 class="hero-title reveal-up">
+        <span class="hero-title-top">Where Vision</span>
+        <span class="hero-title-accent">Meets the</span>
+        <span class="hero-title-bottom">Divine Frame</span>
+      </h1>
+      <p class="hero-sub reveal-up">
+        Horeb Digital Network Inc. — crafting cinematic stories, bold brands,<br />
+        and transformative media experiences that move the world.
+      </p>
+      <div class="hero-actions reveal-up">
+        <a href="#work" class="btn btn-primary">
+          <span>View Our Work</span>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M5 12h14M12 5l7 7-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+        <a href="#contact" class="btn btn-ghost">Start a Project</a>
+      </div>
+    </div>
+
+    <div class="hero-scroll-indicator">
+      <div class="scroll-mouse">
+        <div class="scroll-wheel"></div>
+      </div>
+      <span>Scroll</span>
+    </div>
+
+    <!-- Floating stats ticker -->
+    <div class="hero-stats">
+      <div class="stat-item">
+        <span class="stat-num" data-target="200">0</span><span class="stat-plus">+</span>
+        <span class="stat-label">Productions</span>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat-item">
+        <span class="stat-num" data-target="15">0</span><span class="stat-plus">+</span>
+        <span class="stat-label">Awards Won</span>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat-item">
+        <span class="stat-num" data-target="8">0</span><span class="stat-plus">+</span>
+        <span class="stat-label">Years of Excellence</span>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat-item">
+        <span class="stat-num" data-target="50">0</span><span class="stat-plus">+</span>
+        <span class="stat-label">Global Clients</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════ MARQUEE TICKER -->
+  <div class="ticker-wrap">
+    <div class="ticker">
+      <span>Film Production</span><span class="ticker-dot">✦</span>
+      <span>Commercial Advertising</span><span class="ticker-dot">✦</span>
+      <span>Post-Production</span><span class="ticker-dot">✦</span>
+      <span>Music Videos</span><span class="ticker-dot">✦</span>
+      <span>Documentary</span><span class="ticker-dot">✦</span>
+      <span>Live Event Coverage</span><span class="ticker-dot">✦</span>
+      <span>Motion Graphics</span><span class="ticker-dot">✦</span>
+      <span>Color Grading</span><span class="ticker-dot">✦</span>
+      <span>VFX &amp; Animation</span><span class="ticker-dot">✦</span>
+      <span>Brand Films</span><span class="ticker-dot">✦</span>
+      <!-- Duplicate for seamless loop -->
+      <span>Film Production</span><span class="ticker-dot">✦</span>
+      <span>Commercial Advertising</span><span class="ticker-dot">✦</span>
+      <span>Post-Production</span><span class="ticker-dot">✦</span>
+      <span>Music Videos</span><span class="ticker-dot">✦</span>
+      <span>Documentary</span><span class="ticker-dot">✦</span>
+      <span>Live Event Coverage</span><span class="ticker-dot">✦</span>
+      <span>Motion Graphics</span><span class="ticker-dot">✦</span>
+      <span>Color Grading</span><span class="ticker-dot">✦</span>
+      <span>VFX &amp; Animation</span><span class="ticker-dot">✦</span>
+      <span>Brand Films</span><span class="ticker-dot">✦</span>
+    </div>
+  </div>
+
+  <!-- ═══════════════════════════════════════════ ABOUT -->
+  <section class="about" id="about">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-visual">
+          <div class="about-image-stack">
+            <div class="about-img about-img--main">
+              <div class="img-placeholder img-placeholder--dark">
+                <div class="camera-icon">
+                  <svg viewBox="0 0 80 80" fill="none"><circle cx="40" cy="40" r="18" stroke="#C9A84C" stroke-width="2"/><circle cx="40" cy="40" r="10" stroke="#C9A84C" stroke-width="1.5" stroke-dasharray="4 2"/><rect x="10" y="24" width="60" height="40" rx="4" stroke="#C9A84C" stroke-width="2"/><path d="M26 24v-6a2 2 0 012-2h24a2 2 0 012 2v6" stroke="#C9A84C" stroke-width="2"/><circle cx="62" cy="32" r="3" fill="#C9A84C"/></svg>
+                </div>
+              </div>
+            </div>
+            <div class="about-img about-img--accent">
+              <div class="img-placeholder img-placeholder--gold">
+                <span>Since 2016</span>
+              </div>
+            </div>
+            <div class="about-award-badge">
+              <svg viewBox="0 0 60 60" fill="none"><polygon points="30,5 35,22 52,22 38,33 43,50 30,39 17,50 22,33 8,22 25,22" stroke="#C9A84C" stroke-width="1.5" fill="none"/></svg>
+              <span>Award</span>
+              <span>Winning</span>
+            </div>
+          </div>
+          <div class="about-exp-bar">
+            <div class="exp-bar-fill" style="width: 85%"></div>
+            <div class="exp-bar-label">
+              <span>Cinematic Excellence</span>
+              <span>85%</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="about-content">
+          <div class="section-eyebrow reveal-up">
+            <span class="eyebrow-dot"></span> Our Story
+          </div>
+          <h2 class="section-title reveal-up">
+            Born at the <em>Peak</em><br/>of Creative Vision
+          </h2>
+          <p class="about-lead reveal-up">
+            Horeb — the mountain of God — is where extraordinary encounters happen. That is the standard we hold every frame, every story, every project to.
+          </p>
+          <p class="about-body reveal-up">
+            Horeb Digital Network Inc. is a full-service film and production house delivering cinematic excellence across commercial advertising, feature films, documentaries, music videos, and branded content. We combine the art of storytelling with cutting-edge technology to produce work that doesn't just inform — it transforms.
+          </p>
+          <div class="about-pillars reveal-up">
+            <div class="pillar">
+              <div class="pillar-icon">
+                <svg viewBox="0 0 32 32" fill="none"><path d="M16 3L3 10v12l13 7 13-7V10z" stroke="#C9A84C" stroke-width="1.5" stroke-linejoin="round"/></svg>
+              </div>
+              <div>
+                <strong>Vision-Driven</strong>
+                <p>Every project starts with your story.</p>
+              </div>
+            </div>
+            <div class="pillar">
+              <div class="pillar-icon">
+                <svg viewBox="0 0 32 32" fill="none"><circle cx="16" cy="16" r="12" stroke="#C9A84C" stroke-width="1.5"/><path d="M12 16l3 3 5-5" stroke="#C9A84C" stroke-width="1.5" stroke-linecap="round"/></svg>
+              </div>
+              <div>
+                <strong>Quality Obsessed</strong>
+                <p>Cinematic grade in every deliverable.</p>
+              </div>
+            </div>
+            <div class="pillar">
+              <div class="pillar-icon">
+                <svg viewBox="0 0 32 32" fill="none"><path d="M4 28V16L16 4l12 12v12H20v-8h-8v8z" stroke="#C9A84C" stroke-width="1.5" stroke-linejoin="round"/></svg>
+              </div>
+              <div>
+                <strong>Built to Last</strong>
+                <p>Content that endures beyond trends.</p>
+              </div>
+            </div>
+          </div>
+          <a href="#contact" class="btn btn-primary reveal-up">Work With Us</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════ SERVICES -->
+  <section class="services" id="services">
+    <div class="services-bg-text">PRODUCTION</div>
+    <div class="container">
+      <div class="section-header">
+        <div class="section-eyebrow reveal-up"><span class="eyebrow-dot"></span> What We Do</div>
+        <h2 class="section-title reveal-up">
+          Full-Spectrum <em>Production</em><br/>Excellence
+        </h2>
+        <p class="section-sub reveal-up">From a single idea to a complete cinematic universe — we handle every frame.</p>
+      </div>
+
+      <div class="services-grid">
+
+        <div class="service-card service-card--large reveal-up">
+          <div class="service-card-icon">
+            <svg viewBox="0 0 64 64" fill="none"><rect x="4" y="14" width="56" height="36" rx="3" stroke="#C9A84C" stroke-width="2"/><circle cx="32" cy="32" r="9" stroke="#C9A84C" stroke-width="2"/><circle cx="32" cy="32" r="4" fill="#C9A84C" fill-opacity=".3" stroke="#C9A84C" stroke-width="1.5"/><path d="M54 22h4M54 32h4M54 42h4M6 22H2M6 32H2M6 42H2" stroke="#C9A84C" stroke-width="1.5" stroke-linecap="round"/></svg>
+          </div>
+          <div class="service-number">01</div>
+          <h3>Film &amp; Cinema Production</h3>
+          <p>Feature films, short films, and indie productions crafted with Hollywood-grade equipment and storytelling mastery. From pre-production to final cut — we live in every scene.</p>
+          <div class="service-tags">
+            <span>Feature Films</span><span>Short Films</span><span>Indie Projects</span>
+          </div>
+          <a href="#contact" class="service-link">
+            Explore <svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M5 12h14M12 5l7 7-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+        </div>
+
+        <div class="service-card reveal-up">
+          <div class="service-card-icon">
+            <svg viewBox="0 0 64 64" fill="none"><rect x="8" y="18" width="32" height="24" rx="2" stroke="#C9A84C" stroke-width="2"/><path d="M40 26l16-8v24l-16-8V26z" stroke="#C9A84C" stroke-width="2" stroke-linejoin="round"/></svg>
+          </div>
+          <div class="service-number">02</div>
+          <h3>Commercial &amp; Brand Films</h3>
+          <p>Advertising campaigns, corporate videos, and brand stories that command attention and drive results across every platform.</p>
+          <div class="service-tags">
+            <span>TV Commercials</span><span>Brand Stories</span>
+          </div>
+          <a href="#contact" class="service-link">Explore <svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M5 12h14M12 5l7 7-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+        </div>
+
+        <div class="service-card reveal-up">
+          <div class="service-card-icon">
+            <svg viewBox="0 0 64 64" fill="none"><circle cx="32" cy="32" r="20" stroke="#C9A84C" stroke-width="2"/><path d="M26 22l16 10-16 10V22z" fill="#C9A84C" fill-opacity=".3" stroke="#C9A84C" stroke-width="2" stroke-linejoin="round"/></svg>
+          </div>
+          <div class="service-number">03</div>
+          <h3>Music Video Production</h3>
+          <p>Visually stunning music videos that amplify your artistry. From concept development and set design to post, we are your creative co-director.</p>
+          <div class="service-tags">
+            <span>Concept Design</span><span>Set Direction</span>
+          </div>
+          <a href="#contact" class="service-link">Explore <svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M5 12h14M12 5l7 7-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+        </div>
+
+        <div class="service-card reveal-up">
+          <div class="service-card-icon">
+            <svg viewBox="0 0 64 64" fill="none"><path d="M12 52V24l20-12 20 12v28" stroke="#C9A84C" stroke-width="2" stroke-linejoin="round"/><rect x="24" y="36" width="16" height="16" stroke="#C9A84C" stroke-width="2"/><path d="M20 24h8M36 24h8" stroke="#C9A84C" stroke-width="1.5" stroke-linecap="round"/></svg>
+          </div>
+          <div class="service-number">04</div>
+          <h3>Documentary Filmmaking</h3>
+          <p>Compelling, truth-driven documentaries that capture real stories with cinematic depth, research integrity, and emotional resonance.</p>
+          <div class="service-tags">
+            <span>Long-Form Docs</span><span>Mini-Series</span>
+          </div>
+          <a href="#contact" class="service-link">Explore <svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M5 12h14M12 5l7 7-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+        </div>
+
+        <div class="service-card reveal-up">
+          <div class="service-card-icon">
+            <svg viewBox="0 0 64 64" fill="none"><rect x="8" y="8" width="48" height="48" rx="4" stroke="#C9A84C" stroke-width="2"/><path d="M16 44l10-14 8 10 6-8 8 12" stroke="#C9A84C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><circle cx="22" cy="22" r="4" stroke="#C9A84C" stroke-width="1.5"/></svg>
+          </div>
+          <div class="service-number">05</div>
+          <h3>Post-Production &amp; VFX</h3>
+          <p>Professional editing, color grading, visual effects, motion graphics, and sound design that elevates raw footage into art.</p>
+          <div class="service-tags">
+            <span>Color Grading</span><span>VFX</span><span>Sound Design</span>
+          </div>
+          <a href="#contact" class="service-link">Explore <svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M5 12h14M12 5l7 7-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+        </div>
+
+        <div class="service-card reveal-up">
+          <div class="service-card-icon">
+            <svg viewBox="0 0 64 64" fill="none"><circle cx="32" cy="32" r="14" stroke="#C9A84C" stroke-width="2"/><path d="M32 18V8M32 56v-10M18 32H8M56 32H46M22 22L15 15M49 49L42 42M22 42L15 49M49 15L42 22" stroke="#C9A84C" stroke-width="1.5" stroke-linecap="round"/></svg>
+          </div>
+          <div class="service-number">06</div>
+          <h3>Live Event &amp; Broadcast</h3>
+          <p>Multi-camera live production for concerts, church services, corporate events, and sports — broadcast ready in real-time.</p>
+          <div class="service-tags">
+            <span>Live Streaming</span><span>Multi-Cam</span>
+          </div>
+          <a href="#contact" class="service-link">Explore <svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M5 12h14M12 5l7 7-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════ SHOWREEL BANNER -->
+  <section class="reel-banner">
+    <div class="reel-bg"></div>
+    <div class="reel-content">
+      <p class="reel-eyebrow">Showreel 2024</p>
+      <h2>See What We're<br/>Capable Of</h2>
+      <button class="reel-play-btn" id="reelBtn" aria-label="Play showreel">
+        <div class="play-circle">
+          <svg viewBox="0 0 24 24" fill="none"><path d="M8 5l12 7-12 7V5z" fill="#0a0a0a"/></svg>
+        </div>
+        <span>Play Showreel</span>
+      </button>
+    </div>
+    <!-- Cinematic frame overlays -->
+    <div class="reel-corner reel-corner--tl"></div>
+    <div class="reel-corner reel-corner--tr"></div>
+    <div class="reel-corner reel-corner--bl"></div>
+    <div class="reel-corner reel-corner--br"></div>
+  </section>
+
+  <!-- Video Modal -->
+  <div class="video-modal" id="videoModal">
+    <div class="video-modal-overlay" id="modalOverlay"></div>
+    <div class="video-modal-inner">
+      <button class="modal-close" id="modalClose">
+        <svg viewBox="0 0 24 24" fill="none"><path d="M18 6L6 18M6 6l12 12" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+      </button>
+      <div class="video-wrapper">
+        <div class="video-placeholder">
+          <svg width="80" height="80" viewBox="0 0 80 80" fill="none"><circle cx="40" cy="40" r="38" stroke="#C9A84C" stroke-width="2"/><path d="M32 26l24 14-24 14V26z" fill="#C9A84C"/></svg>
+          <p>Your showreel video will play here</p>
+          <span>Upload your reel video to /assets/showreel.mp4</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ═══════════════════════════════════════════ PORTFOLIO -->
+  <section class="portfolio" id="work">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-eyebrow reveal-up"><span class="eyebrow-dot"></span> Our Work</div>
+        <h2 class="section-title reveal-up">Stories We've <em>Told</em></h2>
+        <p class="section-sub reveal-up">A curated selection of productions that define our craft.</p>
+      </div>
+
+      <div class="portfolio-filter reveal-up">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="film">Film</button>
+        <button class="filter-btn" data-filter="commercial">Commercial</button>
+        <button class="filter-btn" data-filter="music">Music Video</button>
+        <button class="filter-btn" data-filter="doc">Documentary</button>
+      </div>
+
+      <div class="portfolio-grid">
+
+        <div class="port-card reveal-up" data-category="film">
+          <div class="port-thumb">
+            <div class="port-img port-img--1"></div>
+            <div class="port-overlay">
+              <div class="port-play">
+                <svg viewBox="0 0 24 24" fill="none"><path d="M8 5l12 7-12 7V5z" fill="white"/></svg>
+              </div>
+              <div class="port-info">
+                <span class="port-cat">Feature Film</span>
+                <h4>The Last Horizon</h4>
+                <p>Award-winning feature film — Sundance Selection 2023</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="port-card reveal-up" data-category="commercial">
+          <div class="port-thumb">
+            <div class="port-img port-img--2"></div>
+            <div class="port-overlay">
+              <div class="port-play">
+                <svg viewBox="0 0 24 24" fill="none"><path d="M8 5l12 7-12 7V5z" fill="white"/></svg>
+              </div>
+              <div class="port-info">
+                <span class="port-cat">Brand Film</span>
+                <h4>Legacy &amp; Co. Campaign</h4>
+                <p>National TV commercial — 12M+ impressions</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="port-card port-card--tall reveal-up" data-category="music">
+          <div class="port-thumb">
+            <div class="port-img port-img--3"></div>
+            <div class="port-overlay">
+              <div class="port-play">
+                <svg viewBox="0 0 24 24" fill="none"><path d="M8 5l12 7-12 7V5z" fill="white"/></svg>
+              </div>
+              <div class="port-info">
+                <span class="port-cat">Music Video</span>
+                <h4>Grace &amp; Fire — Arise</h4>
+                <p>Gospel music video — 5M+ views</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="port-card reveal-up" data-category="doc">
+          <div class="port-thumb">
+            <div class="port-img port-img--4"></div>
+            <div class="port-overlay">
+              <div class="port-play">
+                <svg viewBox="0 0 24 24" fill="none"><path d="M8 5l12 7-12 7V5z" fill="white"/></svg>
+              </div>
+              <div class="port-info">
+                <span class="port-cat">Documentary</span>
+                <h4>Voices of the Forgotten</h4>
+                <p>Human rights documentary — HBO shortlisted</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="port-card reveal-up" data-category="commercial">
+          <div class="port-thumb">
+            <div class="port-img port-img--5"></div>
+            <div class="port-overlay">
+              <div class="port-play">
+                <svg viewBox="0 0 24 24" fill="none"><path d="M8 5l12 7-12 7V5z" fill="white"/></svg>
+              </div>
+              <div class="port-info">
+                <span class="port-cat">Commercial</span>
+                <h4>Elemental Beauty — Launch</h4>
+                <p>Beauty brand campaign — 3 continent release</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="port-card port-card--wide reveal-up" data-category="film">
+          <div class="port-thumb">
+            <div class="port-img port-img--6"></div>
+            <div class="port-overlay">
+              <div class="port-play">
+                <svg viewBox="0 0 24 24" fill="none"><path d="M8 5l12 7-12 7V5z" fill="white"/></svg>
+              </div>
+              <div class="port-info">
+                <span class="port-cat">Short Film</span>
+                <h4>Between Two Rivers</h4>
+                <p>Festival circuit winner — 7 international awards</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="portfolio-cta reveal-up">
+        <a href="#contact" class="btn btn-outline">Request Full Portfolio</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════ PROCESS -->
+  <section class="process" id="process">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-eyebrow reveal-up"><span class="eyebrow-dot"></span> How We Work</div>
+        <h2 class="section-title reveal-up">From <em>Brief</em> to <em>Brilliance</em></h2>
+        <p class="section-sub reveal-up">Our process is built for creative freedom and professional precision.</p>
+      </div>
+
+      <div class="process-steps">
+        <div class="process-line"></div>
+
+        <div class="process-step reveal-up">
+          <div class="step-number">01</div>
+          <div class="step-icon">
+            <svg viewBox="0 0 48 48" fill="none"><path d="M24 6c9.94 0 18 8.06 18 18S33.94 42 24 42 6 33.94 6 24 14.06 6 24 6z" stroke="#C9A84C" stroke-width="1.5"/><path d="M16 24l6 6 10-12" stroke="#C9A84C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <div class="step-content">
+            <h3>Discovery &amp; Brief</h3>
+            <p>We listen before we create. Deep-dive consultations uncover your vision, audience, and goals so every creative decision is intentional.</p>
+          </div>
+        </div>
+
+        <div class="process-step reveal-up">
+          <div class="step-number">02</div>
+          <div class="step-icon">
+            <svg viewBox="0 0 48 48" fill="none"><rect x="8" y="8" width="32" height="32" rx="2" stroke="#C9A84C" stroke-width="1.5"/><path d="M16 20h16M16 28h10" stroke="#C9A84C" stroke-width="2" stroke-linecap="round"/></svg>
+          </div>
+          <div class="step-content">
+            <h3>Creative Development</h3>
+            <p>Scripts, storyboards, mood boards, and shot lists — we craft a full creative blueprint before a single camera rolls.</p>
+          </div>
+        </div>
+
+        <div class="process-step reveal-up">
+          <div class="step-number">03</div>
+          <div class="step-icon">
+            <svg viewBox="0 0 48 48" fill="none"><rect x="6" y="14" width="36" height="24" rx="2" stroke="#C9A84C" stroke-width="1.5"/><circle cx="24" cy="26" r="6" stroke="#C9A84C" stroke-width="1.5"/><path d="M18 14v-4M30 14v-4" stroke="#C9A84C" stroke-width="1.5" stroke-linecap="round"/></svg>
+          </div>
+          <div class="step-content">
+            <h3>Production</h3>
+            <p>Lights, camera, action. Our crew brings your vision to life with precision logistics, professional talent, and cinematic-grade equipment.</p>
+          </div>
+        </div>
+
+        <div class="process-step reveal-up">
+          <div class="step-number">04</div>
+          <div class="step-icon">
+            <svg viewBox="0 0 48 48" fill="none"><path d="M8 16h32M8 24h24M8 32h16" stroke="#C9A84C" stroke-width="2" stroke-linecap="round"/><circle cx="38" cy="32" r="6" stroke="#C9A84C" stroke-width="1.5"/><path d="M35 32l2 2 3-3" stroke="#C9A84C" stroke-width="1.5" stroke-linecap="round"/></svg>
+          </div>
+          <div class="step-content">
+            <h3>Post-Production</h3>
+            <p>Where good becomes legendary. Editing, color, sound, VFX, and motion graphics — every detail refined until it's perfect.</p>
+          </div>
+        </div>
+
+        <div class="process-step reveal-up">
+          <div class="step-number">05</div>
+          <div class="step-icon">
+            <svg viewBox="0 0 48 48" fill="none"><circle cx="24" cy="24" r="16" stroke="#C9A84C" stroke-width="1.5"/><path d="M16 24l8 8 8-8M24 16v16" stroke="#C9A84C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <div class="step-content">
+            <h3>Delivery &amp; Launch</h3>
+            <p>Platform-optimized exports, delivery to broadcast specs, and distribution strategy support — your content, everywhere it needs to be.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════ TESTIMONIALS -->
+  <section class="testimonials">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-eyebrow reveal-up"><span class="eyebrow-dot"></span> Client Stories</div>
+        <h2 class="section-title reveal-up">Voices That <em>Matter</em></h2>
+      </div>
+
+      <div class="testimonials-slider" id="testimonialSlider">
+        <div class="testimonials-track" id="testimonialTrack">
+
+          <div class="testimonial-card">
+            <div class="testimonial-quote">&#8220;</div>
+            <p>Horeb Digital didn't just produce our commercial — they created a piece of art that became the face of our brand. The level of detail, professionalism, and creative genius is unmatched.</p>
+            <div class="testimonial-author">
+              <div class="author-avatar"></div>
+              <div>
+                <strong>Amara Osei</strong>
+                <span>CEO, Luminary Brands</span>
+              </div>
+              <div class="testimonial-stars">★★★★★</div>
+            </div>
+          </div>
+
+          <div class="testimonial-card">
+            <div class="testimonial-quote">&#8220;</div>
+            <p>From concept to delivery, the team was exceptional. Our documentary screened at three international film festivals. We couldn't have done this without Horeb Digital Network.</p>
+            <div class="testimonial-author">
+              <div class="author-avatar"></div>
+              <div>
+                <strong>Dr. James Folarin</strong>
+                <span>Director, Heritage Foundation</span>
+              </div>
+              <div class="testimonial-stars">★★★★★</div>
+            </div>
+          </div>
+
+          <div class="testimonial-card">
+            <div class="testimonial-quote">&#8220;</div>
+            <p>The music video they produced for my single crossed 5 million views in two weeks. Horeb Digital elevated my entire brand identity. These people see what others can't.</p>
+            <div class="testimonial-author">
+              <div class="author-avatar"></div>
+              <div>
+                <strong>Sola Akinwande</strong>
+                <span>Recording Artist</span>
+              </div>
+              <div class="testimonial-stars">★★★★★</div>
+            </div>
+          </div>
+
+          <div class="testimonial-card">
+            <div class="testimonial-quote">&#8220;</div>
+            <p>Working with Horeb Digital was the best investment we made for our product launch. The cinematic quality, the story arc, the emotional pull — it outperformed every metric we set.</p>
+            <div class="testimonial-author">
+              <div class="author-avatar"></div>
+              <div>
+                <strong>Rachel Chen</strong>
+                <span>VP Marketing, NovaTech</span>
+              </div>
+              <div class="testimonial-stars">★★★★★</div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="testimonial-controls">
+        <button class="testimonial-btn" id="prevBtn" aria-label="Previous">
+          <svg viewBox="0 0 24 24" fill="none"><path d="M19 12H5M12 19l-7-7 7-7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+        <div class="testimonial-dots" id="testimonialDots"></div>
+        <button class="testimonial-btn" id="nextBtn" aria-label="Next">
+          <svg viewBox="0 0 24 24" fill="none"><path d="M5 12h14M12 5l7 7-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════ CLIENTS -->
+  <section class="clients">
+    <div class="container">
+      <div class="section-eyebrow reveal-up" style="justify-content:center"><span class="eyebrow-dot"></span> Trusted By</div>
+      <div class="clients-grid reveal-up">
+        <div class="client-logo">MediaPrime</div>
+        <div class="client-logo">LuminaTV</div>
+        <div class="client-logo">GospelNet</div>
+        <div class="client-logo">NovaRecords</div>
+        <div class="client-logo">HeritageFDN</div>
+        <div class="client-logo">BrightPath</div>
+        <div class="client-logo">UrbanPulse</div>
+        <div class="client-logo">EliteStudio</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════ CONTACT -->
+  <section class="contact" id="contact">
+    <div class="container">
+      <div class="contact-grid">
+
+        <div class="contact-info">
+          <div class="section-eyebrow reveal-up"><span class="eyebrow-dot"></span> Get In Touch</div>
+          <h2 class="section-title reveal-up">Let's Create<br/><em>Something</em><br/>Extraordinary</h2>
+          <p class="reveal-up">Have a project in mind? Tell us your vision and let's build something the world won't forget.</p>
+
+          <div class="contact-details reveal-up">
+            <div class="contact-item">
+              <div class="contact-item-icon">
+                <svg viewBox="0 0 24 24" fill="none"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 015.1 12.82a19.79 19.79 0 01-3.07-8.67A2 2 0 014.01 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z" stroke="#C9A84C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </div>
+              <div>
+                <strong>Phone</strong>
+                <span>+1 (800) HOREB-01</span>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-item-icon">
+                <svg viewBox="0 0 24 24" fill="none"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" stroke="#C9A84C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M22 6l-10 7L2 6" stroke="#C9A84C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </div>
+              <div>
+                <strong>Email</strong>
+                <span>hello@horebdigitalnetwork.com</span>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-item-icon">
+                <svg viewBox="0 0 24 24" fill="none"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z" stroke="#C9A84C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><circle cx="12" cy="10" r="3" stroke="#C9A84C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </div>
+              <div>
+                <strong>Studio</strong>
+                <span>www.horebdigitalnetwork.com</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="social-links reveal-up">
+            <a href="#" class="social-link" aria-label="Instagram">
+              <svg viewBox="0 0 24 24" fill="none"><rect x="2" y="2" width="20" height="20" rx="5" stroke="currentColor" stroke-width="1.5"/><circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="1.5"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg>
+            </a>
+            <a href="#" class="social-link" aria-label="YouTube">
+              <svg viewBox="0 0 24 24" fill="none"><path d="M22.54 6.42a2.78 2.78 0 00-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46a2.78 2.78 0 00-1.95 1.96A29 29 0 001 12a29 29 0 00.46 5.58 2.78 2.78 0 001.95 1.95C5.12 20 12 20 12 20s6.88 0 8.59-.47a2.78 2.78 0 001.95-1.95A29 29 0 0023 12a29 29 0 00-.46-5.58z" stroke="currentColor" stroke-width="1.5"/><path d="M9.75 15.02l5.75-3.02-5.75-3.02v6.04z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></svg>
+            </a>
+            <a href="#" class="social-link" aria-label="LinkedIn">
+              <svg viewBox="0 0 24 24" fill="none"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><circle cx="4" cy="4" r="2" stroke="currentColor" stroke-width="1.5"/></svg>
+            </a>
+            <a href="#" class="social-link" aria-label="Vimeo">
+              <svg viewBox="0 0 24 24" fill="none"><path d="M22 7.42c-.09 2.01-1.5 4.77-4.22 8.26C14.98 19.3 12.6 21 10.57 21c-1.2 0-2.22-1.11-3.06-3.33L6.1 13.5C5.5 11.28 4.83 10.17 4.1 10.17c-.16 0-.72.34-1.68 1.01L1 9.75c1.07-.94 2.12-1.88 3.14-2.83C5.6 5.65 6.7 4.9 7.47 4.83c1.92-.18 3.1 1.13 3.55 3.93.48 3 .81 4.87 1 5.6.55 2.5 1.16 3.74 1.83 3.74.52 0 1.3-.82 2.34-2.46 1.04-1.64 1.6-2.9 1.67-3.77.15-1.43-.41-2.15-1.67-2.15-.6 0-1.21.14-1.84.41 1.22-4 3.56-5.95 7.02-5.82.26.01.52.05.77.1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="contact-form-wrap reveal-up">
+          <form class="contact-form" id="contactForm" novalidate>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="firstName">First Name</label>
+                <input type="text" id="firstName" name="firstName" placeholder="John" required />
+              </div>
+              <div class="form-group">
+                <label for="lastName">Last Name</label>
+                <input type="text" id="lastName" name="lastName" placeholder="Doe" required />
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <input type="email" id="email" name="email" placeholder="john@company.com" required />
+            </div>
+            <div class="form-group">
+              <label for="projectType">Project Type</label>
+              <select id="projectType" name="projectType" required>
+                <option value="" disabled selected>Select a service</option>
+                <option>Feature Film</option>
+                <option>Commercial / Brand Film</option>
+                <option>Music Video</option>
+                <option>Documentary</option>
+                <option>Post-Production / VFX</option>
+                <option>Live Event Coverage</option>
+                <option>Other</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="budget">Estimated Budget</label>
+              <select id="budget" name="budget">
+                <option value="" disabled selected>Select budget range</option>
+                <option>$5,000 – $15,000</option>
+                <option>$15,000 – $50,000</option>
+                <option>$50,000 – $100,000</option>
+                <option>$100,000+</option>
+                <option>Let's discuss</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="message">Tell Us About Your Project</label>
+              <textarea id="message" name="message" rows="5" placeholder="Share your vision, timeline, and any details that will help us understand your project..." required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-full">
+              <span>Send Your Brief</span>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M22 2L11 13M22 2L15 22l-4-9-9-4 20-7z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </button>
+            <div class="form-success" id="formSuccess">
+              <svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" stroke="#C9A84C" stroke-width="1.5"/><path d="M8 12l3 3 5-5" stroke="#C9A84C" stroke-width="2" stroke-linecap="round"/></svg>
+              <p>Your brief has been sent. We'll be in touch within 24 hours.</p>
+            </div>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════ FOOTER -->
+  <footer class="footer">
+    <div class="footer-top">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-brand">
+            <a href="#home" class="nav-logo">
+              <div class="logo-mark">
+                <svg viewBox="0 0 60 60" fill="none"><polygon points="30,4 56,18 56,42 30,56 4,42 4,18" stroke="#C9A84C" stroke-width="2" fill="none"/><text x="50%" y="54%" dominant-baseline="middle" text-anchor="middle" fill="#C9A84C" font-size="18" font-family="Bebas Neue" letter-spacing="1">H</text></svg>
+              </div>
+              <div class="logo-text">
+                <span class="logo-name">Horeb Digital</span>
+                <span class="logo-sub">Network Inc.</span>
+              </div>
+            </a>
+            <p class="footer-tagline">Where Vision Meets the Divine Frame.</p>
+            <p class="footer-desc">Full-service film and production house delivering cinematic excellence across commercial, narrative, and digital media.</p>
+          </div>
+
+          <div class="footer-col">
+            <h4>Services</h4>
+            <ul>
+              <li><a href="#services">Film &amp; Cinema Production</a></li>
+              <li><a href="#services">Commercial &amp; Brand Films</a></li>
+              <li><a href="#services">Music Video Production</a></li>
+              <li><a href="#services">Documentary Filmmaking</a></li>
+              <li><a href="#services">Post-Production &amp; VFX</a></li>
+              <li><a href="#services">Live Event &amp; Broadcast</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-col">
+            <h4>Company</h4>
+            <ul>
+              <li><a href="#about">About Us</a></li>
+              <li><a href="#work">Our Work</a></li>
+              <li><a href="#process">Our Process</a></li>
+              <li><a href="#contact">Contact</a></li>
+              <li><a href="#">Careers</a></li>
+              <li><a href="#">Press &amp; Media</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-col">
+            <h4>Connect</h4>
+            <ul>
+              <li><a href="#">Instagram</a></li>
+              <li><a href="#">YouTube</a></li>
+              <li><a href="#">Vimeo</a></li>
+              <li><a href="#">LinkedIn</a></li>
+              <li><a href="#">Facebook</a></li>
+            </ul>
+            <div class="footer-newsletter">
+              <p>Get production insights:</p>
+              <div class="newsletter-row">
+                <input type="email" placeholder="your@email.com" aria-label="Subscribe to newsletter"/>
+                <button type="button">Go</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container">
+        <p>&copy; 2024 Horeb Digital Network Inc. All rights reserved.</p>
+        <div class="footer-legal">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Big background logo text -->
+    <div class="footer-watermark">HOREB</div>
+  </footer>
+
+  <!-- Back to top -->
+  <button class="back-top" id="backTop" aria-label="Back to top">
+    <svg viewBox="0 0 24 24" fill="none"><path d="M12 19V5M5 12l7-7 7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+  </button>
+
+  <script src="main.js"></script>
+</body>
+</html>
