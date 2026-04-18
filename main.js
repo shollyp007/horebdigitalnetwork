@@ -271,18 +271,33 @@ function initAnimations() {
   const success = document.getElementById('formSuccess');
   if (!form) return;
 
-  form.addEventListener('submit', e => {
+  form.addEventListener('submit', async e => {
     e.preventDefault();
     const btn = form.querySelector('[type="submit"]');
     btn.disabled = true;
     btn.innerHTML = '<span>Sending...</span>';
 
-    // Simulate async (wire up to your backend/formspree/etc.)
-    setTimeout(() => {
-      form.querySelectorAll('input, select, textarea').forEach(el => el.value = '');
-      btn.style.display = 'none';
-      success.classList.add('show');
-    }, 1500);
+    try {
+      const response = await fetch(form.action, {
+        method: 'POST',
+        body: new FormData(form),
+        headers: { 'Accept': 'application/json' }
+      });
+
+      if (response.ok) {
+        form.querySelectorAll('input, select, textarea').forEach(el => el.value = '');
+        btn.style.display = 'none';
+        success.classList.add('show');
+      } else {
+        btn.disabled = false;
+        btn.innerHTML = '<span>Send Your Brief</span>';
+        alert('Something went wrong. Please try again.');
+      }
+    } catch (err) {
+      btn.disabled = false;
+      btn.innerHTML = '<span>Send Your Brief</span>';
+      alert('Network error. Please check your connection and try again.');
+    }
   });
 })();
 
